@@ -1,0 +1,13 @@
+{
+    "AccessPoints": [
+        { "SSID": "SSID1", "password": "Password1", "timezone" : "Europe/Amsterdam" },
+        { "SSID": "SSID2", "password": "Password2", "timezone" : "Europe/Amsterdam" }
+    ],
+    "LogFile": "log001.csv",
+    "BotToken": "xxxxxxxxxx:yyyyyyyyyyyy-zzzzzzzzzzzzzz_qqqqqqq",
+    "ChatID" : "nnnnnnnnnn",
+    "pressureThreshold": 150,
+    "sampleInterval": 300,
+    "pumpOffTimeOut": 3900
+}
+
