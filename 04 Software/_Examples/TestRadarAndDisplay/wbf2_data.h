@@ -4,22 +4,33 @@
 //=====================
 // DEFINES
 //=====================
-#define RADAR_ARRAY_SIZE             71 // Number of ultrasonic measurements per sweep of the radar
-#define STEPS_BETWEEN_SAMPLES        48 // Number of steps between ultrasonic measurements 
-#define MICROSECONDS_BETWEEN_STEPS 1000 // Number of ms between steps
-#define DISTANCE_MAX                400 // Largest measurable distance in mm
+#define RADAR_ARRAY_SIZE             70 // Number of ultrasonic measurements per sweep of the radar
+#define STEPS_BETWEEN_SAMPLES        50 // Number of steps between ultrasonic measurements 
+#define MICROSECONDS_BETWEEN_STEPS 1000 // Number of µs between steps
+
+#define CHALLENGE_MAX 3                 // Number of challenges
 
 // ======== CONSTANTS ================
 
 // ======== DATA TYPES ============= 
-enum tScreen          {scRadar};
-enum tGameplayStep    {gpIdle,    gpQ1,            gpQ2};
+enum tScreen          {scStartChallenge, scDisplayChallenge, scRadarRed, scRadarGreen };
 
-typedef struct _tCanPositions
-{
-  int pos1;
-  int pos2;
-} tCanPositions;
+
+typedef struct {
+  char titleLine1[25];           // First line of title
+  char titleLine2[25];           // Second line of title
+  int CanPos1                    // Position of first can  (-1 is not needed)
+  int CanPos2                    // Position of second can (-1 is not needed)
+  int CanPos3                    // Position of third can  (-1 is not needed)
+} tChallenge;
+
+
+// List the challenges, including the final one
+static const tChallenge challenges[] = {
+  {  "1) Welke programma's", "zijn correct", 600, 1200, 1800 },
+  {  "2) Welke programma's", "zijn correct", 600, 1200,   -1 },
+  {  "JE HEBT",              "GEWONNEN!"   ,  -1,   -1,   -1 }
+};
 
 class tPixel {
   public:
@@ -31,30 +42,18 @@ class tPixel {
     //tPixel(tPixel& p)     { this->x=p->x; this->y=p->y; };
 };
 
-class tData 
-{
-  public:
-  
-    //screen
-    tScreen screen=scRadar;
-    bool btnPlayTouched=false; // button 1
-    bool btnOkTouched=false;   // button 2
-        
-    //gameplay
-    tGameplayStep gameStep=gpIdle;
-    bool allAnswersOk=false;
-
-};    
-
 
 
 
 
 // ======== GLOBAL VARIABLES ============= 
-tData data;     // Data, lost if device is switched off
 
 // ultrasonic distance measurements
-int64_t radarMeasurements[RADAR_ARRAY_SIZE]; // Microseconds passed
+float radarMeasurements[RADAR_ARRAY_SIZE]; // Millimeters from radar
+
+tScreen screen = scStartChallenge; // State machine for different screens
+int challengeID = 0;               // Which of the challenges is currently playing
+bool radarSpinning = false;
 
 portMUX_TYPE dataAccessMux = portMUX_INITIALIZER_UNLOCKED;
 portMUX_TYPE configAccessMux = portMUX_INITIALIZER_UNLOCKED;

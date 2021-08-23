@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Gameplay state machine.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.69575617"
+     inkscape:cx="396.85039"
+     inkscape:cy="561.25984"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:snap-center="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Leaders">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 52.499999,105 v 5 l 10e-7,25"
+       id="path895"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 35,135 H 25 V 62.5 H 72.499998 V 65"
+       id="path897"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 72.5,82.5 2e-6,-40"
+       id="path899"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 92.5,107.5 v 55"
+       id="path957"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 52.5,135 v 12.5 H 20.000001 l 10e-7,-100 H 72.5 v 5"
+       id="path967"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Shapes">
+    <rect
+       style="opacity:1;vector-effect:none;fill:#fffccd;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect1023"
+       width="42.5"
+       height="12.5"
+       x="147.5"
+       y="37.5" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#cdd9ff;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect1026"
+       width="42.5"
+       height="12.5"
+       x="147.5"
+       y="50" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#ffcdcd;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect1028"
+       width="42.5"
+       height="12.5"
+       x="147.5"
+       y="62.5" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#d3ffcd;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect1030"
+       width="42.5"
+       height="12.5"
+       x="147.5"
+       y="75" />
+  </g>
+  <g
+     inkscape:label="Text"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 52.5,92.499999 -17.5,7.5 L 52.5,107.5 70,99.999999 Z"
+       id="path863"
+       sodipodi:nodetypes="ccccc" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect12"
+       width="35"
+       height="10"
+       x="54.999996"
+       y="50" />
+    <rect
+       style="fill:#cdd9ff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect841"
+       width="35"
+       height="10"
+       x="55"
+       y="65" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="72.477608"
+       y="55.885391"
+       id="text839"><tspan
+         sodipodi:role="line"
+         id="tspan837"
+         x="72.477608"
+         y="55.885391"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">challengeID=0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="72.436264"
+       y="68.680527"
+       id="text845"><tspan
+         sodipodi:role="line"
+         x="72.436264"
+         y="68.680527"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan993">Display challenge or </tspan><tspan
+         sodipodi:role="line"
+         x="72.436264"
+         y="73.090248"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan997">challenge completed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="52.407845"
+       y="101.10071"
+       id="text851"><tspan
+         sodipodi:role="line"
+         id="tspan849"
+         x="52.407845"
+         y="101.10071"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">Button Next</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 92.5,92.499999 -17.5,7.5 L 92.5,107.5 110,99.999999 Z"
+       id="path879"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="92.407845"
+       y="101.10071"
+       id="text883"><tspan
+         sodipodi:role="line"
+         id="tspan881"
+         x="92.407845"
+         y="101.10071"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">Button OK</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect885"
+       width="35"
+       height="10"
+       x="35"
+       y="112.5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="51.227608"
+       y="118.38539"
+       id="text889"><tspan
+         sodipodi:role="line"
+         id="tspan887"
+         x="51.227608"
+         y="118.38539"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">challengeID++</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 72.5,87.5 V 90 l -20.000001,-10e-7 v 2.5"
+       id="path891"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 72.5,87.5 V 90 l 20.000001,-10e-7 v 2.5"
+       id="path901"
+       sodipodi:nodetypes="cccc" />
+    <rect
+       style="fill:#ffcdcd;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect903"
+       width="35"
+       height="10"
+       x="75"
+       y="112.5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="92.436256"
+       y="116.18053"
+       id="text907"><tspan
+         sodipodi:role="line"
+         id="tspan905"
+         x="92.436256"
+         y="116.18053"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">Display radar</tspan><tspan
+         sodipodi:role="line"
+         x="92.436256"
+         y="120.59025"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan923">red background</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 52.5,127.5 35,135 52.5,142.5 70,135 Z"
+       id="path909"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="52.407845"
+       y="133.60043"
+       id="text913"><tspan
+         sodipodi:role="line"
+         id="tspan911"
+         x="52.407845"
+         y="133.60043"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">Last</tspan><tspan
+         sodipodi:role="line"
+         x="52.407845"
+         y="138.01016"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan915">challenge?</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 92.5,127.5 75,135 92.5,142.5 110,135 Z"
+       id="path927"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="92.407845"
+       y="136.16704"
+       id="text933"><tspan
+         sodipodi:role="line"
+         x="92.407845"
+         y="136.16704"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan931">Answer OK?</tspan></text>
+    <rect
+       style="fill:#d3ffcd;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect937"
+       width="35"
+       height="10"
+       x="75"
+       y="145" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="92.436256"
+       y="148.68053"
+       id="text943"><tspan
+         sodipodi:role="line"
+         id="tspan939"
+         x="92.436256"
+         y="148.68053"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">Display radar</tspan><tspan
+         sodipodi:role="line"
+         x="92.436256"
+         y="153.09026"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan941">green background</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect945"
+       width="35"
+       height="10"
+       x="75"
+       y="157.5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="92.436256"
+       y="163.59811"
+       id="text951"><tspan
+         sodipodi:role="line"
+         x="92.436256"
+         y="163.59811"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan949">Pause 5 sec</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 92.5,167.5 2e-6,5 H 72.5 l -2e-6,-62.5 H 52.499999"
+       id="path955"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="M 132.5,127.5 115,135 132.5,142.5 150,135 Z"
+       id="path969"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="132.40784"
+       y="136.10071"
+       id="text973"><tspan
+         sodipodi:role="line"
+         id="tspan971"
+         x="132.40784"
+         y="136.10071"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">Button Next</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 92.5,122.5 v 2.5 h 40 v 2.5"
+       id="path981"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.5,142.5 v 30 H 92.500001"
+       id="path985"
+       sodipodi:nodetypes="ccc" />
+    <rect
+       style="fill:#fffccd;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect987"
+       width="35"
+       height="10"
+       x="54.999996"
+       y="35"
+       rx="5"
+       ry="5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="72.477608"
+       y="40.885391"
+       id="text991"><tspan
+         sodipodi:role="line"
+         id="tspan989"
+         x="72.477608"
+         y="40.885391"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">START</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="168.7569"
+       y="44.634529"
+       id="text1003"><tspan
+         sodipodi:role="line"
+         x="168.7569"
+         y="44.634529"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan1001">stStartChallenge</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="168.7569"
+       y="57.134529"
+       id="text1009"><tspan
+         sodipodi:role="line"
+         x="168.7569"
+         y="57.134529"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan1007">stDisplayChallenge</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="168.79651"
+       y="69.636246"
+       id="text1013"><tspan
+         sodipodi:role="line"
+         x="168.79651"
+         y="69.636246"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan1011">stDisplayRadarRed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="168.79134"
+       y="82.136246"
+       id="text1017"><tspan
+         sodipodi:role="line"
+         x="168.79134"
+         y="82.136246"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan1015">stDisplayRadarGreen</tspan></text>
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect1032"
+       width="35"
+       height="10"
+       x="55"
+       y="77.5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       x="71.227608"
+       y="83.385391"
+       id="text1036"><tspan
+         sodipodi:role="line"
+         id="tspan1034"
+         x="71.227608"
+         y="83.385391"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583">Start/stop radar</tspan></text>
+  </g>
+</svg>

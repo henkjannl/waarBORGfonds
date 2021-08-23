@@ -7,16 +7,18 @@
 /* 
 This module takes care of rotating the antenna and storing ultrasonic measurements
 
-The radar runs on three interrupt routines:
-  onRotate      :  one step left or right, checks 
-                    if a measurement needs to be triggered 
-                    if direction needs to be changed
-  onRisingEcho  :  measures time if the echo goes high
-  onFallingEcho :  measures time if the echo goes low, measures and stores distance
+The radar runs on two interrupt routines:
+  onRotate        :  one step left or right, checks 
+                        if a measurement needs to be triggered 
+                        if direction needs to be changed
+  onEchoInterrupt :  handles the echo response 
+                        measures time if the echo goes high
+                        measures time if the echo goes low, measures and stores distance
 
 */
 
-#define ENABLE_STEPPER false
+#define ENABLE_STEPPER false     // For debug purposes
+#define DISTANCE_SCALE 0.34/2    // mm per µs
 
 //=====================
 // GLOBAL VARIABLES
@@ -82,7 +84,7 @@ void IRAM_ATTR onEchoInterrupt() {
   else {
     // Falling edge, the length of the signal determines the distance
     radarDebug=(radarDebug==2) ? 4 : 3;
-    radarMeasurements[sampleID] = (esp_timer_get_time() - echoStartTimer);
+    radarMeasurements[sampleID] = DISTANCE_SCALE * (esp_timer_get_time() - echoStartTimer);
   }
 
   portEXIT_CRITICAL_ISR(&radarMux);
@@ -101,6 +103,7 @@ void initRadar() {
   timerAlarmWrite(timer, MICROSECONDS_BETWEEN_STEPS, true);
   timerAlarmEnable(timer);
 
+  // Setup a hardware interrupt to respond to changes in the echo signal
   attachInterrupt(PIN_SONIC_ECHO, &onEchoInterrupt,  CHANGE);
 }
 
