@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg55"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Board layout.svg">
+  <defs
+     id="defs49">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.69575617"
+     inkscape:cx="396.85039"
+     inkscape:cy="561.25984"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-center="true" />
+  <metadata
+     id="metadata52">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffc591;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect75"
+       width="164.58165"
+       height="207.64696"
+       x="22.709349"
+       y="27.806707" />
+    <rect
+       style="fill:#a04b00;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect59"
+       width="28.865108"
+       height="4.0090427"
+       x="90.567444"
+       y="36.283218" />
+    <rect
+       style="fill:#a04b00;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect61"
+       width="28.865108"
+       height="4.0090427"
+       x="90.567444"
+       y="112.51727" />
+    <rect
+       style="fill:#a04b00;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect63"
+       width="28.865108"
+       height="4.0090427"
+       x="51.38887"
+       y="-134.53821"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#a04b00;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect65"
+       width="28.865108"
+       height="4.0090427"
+       x="51.38887"
+       y="-79.470833"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect73"
+       width="148.5"
+       height="105"
+       x="30.75"
+       y="122.41266" />
+    <g
+       id="g83"
+       transform="translate(-0.39023972,21.166667)"
+       style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">
+      <circle
+         style="fill:#000000;stroke:none;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path77"
+         cx="35.616646"
+         cy="104.90366"
+         r="2" />
+      <circle
+         style="fill:#000000;stroke:none;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+         id="circle79"
+         cx="175.16383"
+         cy="104.90366"
+         r="2" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.48763px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="104.99452"
+       y="132.55324"
+       id="text87"><tspan
+         sodipodi:role="line"
+         id="tspan85"
+         x="104.99452"
+         y="132.55324"
+         style="text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Stapeltje vellen A3 papier</tspan><tspan
+         sodipodi:role="line"
+         x="104.99452"
+         y="138.16278"
+         style="text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1302">met verschillende opdrachten</tspan></text>
+    <rect
+       style="fill:#dccf00;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;font-variation-settings:normal;opacity:1;vector-effect:none;fill-opacity:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-opacity:1"
+       id="rect89"
+       width="28.865112"
+       height="43.954208"
+       x="90.567444"
+       y="68.563049"
+       rx="3"
+       ry="3" />
+    <rect
+       style="fill:#dccf00;stroke:#000000;stroke-width:1;stroke-linejoin:round;stop-color:#000000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect57"
+       width="50"
+       height="50"
+       x="80"
+       y="40.82143"
+       rx="3"
+       ry="3" />
+    <rect
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="rect105"
+       width="17.637676"
+       height="17.637676"
+       x="96.18116"
+       y="92.85051"
+       rx="3.0000045"
+       ry="3.0000045" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.48763px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="104.87729"
+       y="66.946625"
+       id="text934"><tspan
+         sodipodi:role="line"
+         id="tspan932"
+         x="104.87729"
+         y="66.946625"
+         style="text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Radar</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ffc591;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 76.701607,155.66568 v 30.37664"
+       id="path1278" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffc591;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="circle938"
+       cx="76.701607"
+       cy="155.66568"
+       r="10.729983" />
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#fffccd;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 105,159.1331 v 53.73195"
+       id="path1294"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#fffccd;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="circle942"
+       cx="105"
+       cy="160.19141"
+       r="10.729983" />
+    <rect
+       style="font-variation-settings:normal;vector-effect:none;fill:#fffccd;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect1082"
+       width="44.801708"
+       height="11.228354"
+       x="82.599152"
+       y="210.74568" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.37521px;line-height:116.591%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="84.616608"
+       y="213.72806"
+       id="text1096"
+       transform="scale(1.0007275,0.99927302)"><tspan
+         sodipodi:role="line"
+         id="tspan1084"
+         x="84.616608"
+         y="213.72806"
+         style="stroke-width:0.264583">num = False</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1086"
+         x="84.616608"
+         y="215.33144"
+         style="stroke-width:0.264583">if isinstance(num, int):</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1088"
+         x="84.616608"
+         y="216.9348"
+         style="stroke-width:0.264583">    print('Integer')  # Option A</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1090"
+         x="84.616608"
+         y="218.53818"
+         style="stroke-width:0.264583">else:</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1092"
+         x="84.616608"
+         y="220.14154"
+         style="stroke-width:0.264583">    raise TypeError('Not an integer')  # Option B</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1094"
+         x="84.616608"
+         y="221.74492"
+         style="stroke-width:0.264583"></tspan></text>
+    <rect
+       style="font-variation-settings:normal;vector-effect:none;fill:#ffc591;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect1200"
+       width="44.801708"
+       height="11.228354"
+       x="49.965832"
+       y="178.99567" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.37521px;line-height:116.591%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="52.007015"
+       y="181.95496"
+       id="text1214"
+       transform="scale(1.0007275,0.99927302)"><tspan
+         sodipodi:role="line"
+         id="tspan1202"
+         x="52.007015"
+         y="181.95496"
+         style="stroke-width:0.264583">num = False</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1204"
+         x="52.007015"
+         y="183.55833"
+         style="stroke-width:0.264583">if isinstance(num, int):</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1206"
+         x="52.007015"
+         y="185.1617"
+         style="stroke-width:0.264583">    print('Integer')  # Option A</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1208"
+         x="52.007015"
+         y="186.76508"
+         style="stroke-width:0.264583">else:</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1210"
+         x="52.007015"
+         y="188.36844"
+         style="stroke-width:0.264583">    raise TypeError('Not an integer')  # Option B</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1212"
+         x="52.007015"
+         y="189.97182"
+         style="stroke-width:0.264583"></tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#cdfeff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 50.519882,143.64184 -9.925195,17.19095 v 52.03226"
+       id="path1276"
+       sodipodi:nodetypes="ccc" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#cdfeff;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path936"
+       cx="50.519882"
+       cy="143.64183"
+       r="10.729983" />
+    <rect
+       style="font-variation-settings:normal;vector-effect:none;fill:#cdfeff;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect948"
+       width="44.801708"
+       height="11.228354"
+       x="34.265854"
+       y="210.74568" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.37521px;line-height:116.591%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="36.318451"
+       y="213.72806"
+       id="text965"
+       transform="scale(1.0007275,0.99927302)"><tspan
+         sodipodi:role="line"
+         id="tspan1056"
+         x="36.318451"
+         y="213.72806"
+         style="stroke-width:0.264583">num = False</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1058"
+         x="36.318451"
+         y="215.33144"
+         style="stroke-width:0.264583">if isinstance(num, int):</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1060"
+         x="36.318451"
+         y="216.9348"
+         style="stroke-width:0.264583">    print('Integer')  # Option A</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1062"
+         x="36.318451"
+         y="218.53818"
+         style="stroke-width:0.264583">else:</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1064"
+         x="36.318451"
+         y="220.14154"
+         style="stroke-width:0.264583">    raise TypeError('Not an integer')  # Option B</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1066"
+         x="36.318451"
+         y="221.74492"
+         style="stroke-width:0.264583"></tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#d3ffcd;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       d="m 133.29839,155.53258 v 30.37664"
+       id="path1296" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#d3ffcd;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="circle946"
+       cx="133.29839"
+       cy="155.53258"
+       r="10.729983" />
+    <rect
+       style="font-variation-settings:normal;vector-effect:none;fill:#d3ffcd;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect1218"
+       width="44.801708"
+       height="11.228354"
+       x="115.76161"
+       y="178.99567" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.37521px;line-height:116.591%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="117.75495"
+       y="181.95496"
+       id="text1232"
+       transform="scale(1.0007275,0.99927302)"><tspan
+         sodipodi:role="line"
+         id="tspan1220"
+         x="117.75495"
+         y="181.95496"
+         style="stroke-width:0.264583">num = False</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1222"
+         x="117.75495"
+         y="183.55833"
+         style="stroke-width:0.264583">if isinstance(num, int):</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1224"
+         x="117.75495"
+         y="185.1617"
+         style="stroke-width:0.264583">    print('Integer')  # Option A</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1226"
+         x="117.75495"
+         y="186.76508"
+         style="stroke-width:0.264583">else:</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1228"
+         x="117.75495"
+         y="188.36844"
+         style="stroke-width:0.264583">    raise TypeError('Not an integer')  # Option B</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1230"
+         x="117.75495"
+         y="189.97182"
+         style="stroke-width:0.264583"></tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#f991ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 159.48012,143.64185 9.9252,17.19095 v 52.03225"
+       id="path1298"
+       sodipodi:nodetypes="ccc" />
+    <circle
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f991ff;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="circle944"
+       cx="159.48012"
+       cy="143.64183"
+       r="10.729983" />
+    <rect
+       style="font-variation-settings:normal;vector-effect:none;fill:#f991ff;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
+       id="rect1098"
+       width="44.801708"
+       height="11.228354"
+       x="130.93243"
+       y="210.74568" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.37521px;line-height:116.591%;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="132.91475"
+       y="213.72806"
+       id="text1112"
+       transform="scale(1.0007275,0.99927302)"><tspan
+         sodipodi:role="line"
+         id="tspan1100"
+         x="132.91475"
+         y="213.72806"
+         style="stroke-width:0.264583">num = False</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1102"
+         x="132.91475"
+         y="215.33144"
+         style="stroke-width:0.264583">if isinstance(num, int):</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1104"
+         x="132.91475"
+         y="216.9348"
+         style="stroke-width:0.264583">    print('Integer')  # Option A</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1106"
+         x="132.91475"
+         y="218.53818"
+         style="stroke-width:0.264583">else:</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1108"
+         x="132.91475"
+         y="220.14154"
+         style="stroke-width:0.264583">    raise TypeError('Not an integer')  # Option B</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1110"
+         x="132.91475"
+         y="221.74492"
+         style="stroke-width:0.264583"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.48763px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="57.369522"
+       y="63.7616"
+       id="text1316"><tspan
+         sodipodi:role="line"
+         x="57.369522"
+         y="63.7616"
+         style="text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1314">Uitlijnnokken</tspan><tspan
+         sodipodi:role="line"
+         x="57.369522"
+         y="69.37114"
+         style="font-weight:normal;text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1318">Ultimaker?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.48763px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;word-spacing:0px;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       x="54.194519"
+       y="113.50326"
+       id="text1324"><tspan
+         sodipodi:role="line"
+         x="54.194519"
+         y="113.50326"
+         style="font-weight:normal;text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1322"><tspan
+   id="tspan1326"
+   style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">Uitlijnpennen</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="54.194519"
+         y="119.11279"
+         style="font-weight:normal;text-align:center;text-anchor:middle;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan1328">perforator?</tspan></text>
+  </g>
+</svg>
