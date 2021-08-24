@@ -6,15 +6,47 @@
 #include "wbf_data.h"
 
 // ======== DEFINES ======================
-#define SONAR_NO_SEE_DISTANCE 300
-#define SONAR_POSWINDOW 5
+
+
+//
+// ======== CONSTANTS ============= 
+//
+
 
 // ======== GLOBAL VARIABLES ============= 
 void taskGameplay(void * parameter);
-bool checkQuestionIsOk(int question);
+bool checkAnswerIsOk();
+
+TimerHandle_t keyboardTimer;   // Polls capacitive keys @30Hz
+
+bool btnNextTouched=false;
+bool btnOkTouched=false;
+
+
+static void keyboardTimerCallback( TimerHandle_t xTimer ) {
+
+  static volatile uint32_t keyNextCounter  = 0;
+  static volatile uint32_t keyOKCounter    = 0;
+  
+  if (touchRead(PIN_BUT_1)<KEY_TRESHOLD) keyNextCounter++;  else keyNextCounter =0; 
+  if (touchRead(PIN_BUT_2)<KEY_TRESHOLD) keyOKCounter++;    else keyOKCounter   =0; 
+
+  if(keyNextCounter==3) { btnNextTouched=true; }
+  if(keyOKCounter  ==3) { btnOkTouched  =true; }
+
+}; // keyboardTimerCallback
+
 
 void setupGameplay() 
 {
+
+  // Start a 30Hz timer that checks the capacitive keys
+  keyboardTimer=xTimerCreate( "Keys", 
+                pdMS_TO_TICKS(30), // Routine called at 30 Hz, so key response at 10 Hz
+                pdTRUE,            // Auto reload, 
+                0,                 // TimerID, unused
+                keyboardTimerCallback); 
+
   Serial.printf("Create gameplay task\n");
   xTaskCreatePinnedToCore(
     taskGameplay,               // The function containing the task
@@ -28,101 +60,66 @@ void setupGameplay()
 
 void taskGameplay(void *parameter) 
 {
-  int gameStep;
-  
-  
+   
   while(true) 
   {
-    switch(data.gameStep)
-    {
-      case gpIdle:
-        if(data.btnPlayTouched)
-        {
-          portENTER_CRITICAL(&dataAccessMux);
-            data.allAnswersOk=false;
-            data.gameStep=gpQ1;
-          portEXIT_CRITICAL(&dataAccessMux);
+      // Run the sate machines that manage which screen to display
+      if (screen==scStartChallenge) 
+      {
+
+        // Initialize variables and go to the next state
+        challengeID=0;
+        radarSpinning=false;
+        updateScreen=true;
+        screen=scDisplayChallenge;
+
+      } // screen==scStartChallenge
+
+      else if (screen==scDisplayChallenge) 
+      {
+        if(btnNextTouched) {
+
+          // Go to the next challenge
+          challengeID++;
+          updateScreen=true;
+
+          // Allow recycling of first challenge if we accidentally pressed the wrong button
+          if(challengeID>CHALLENGE_MAX-1) challengeID=0;
+
+          btnNextTouched=false;
         }
-        break;
-      case gpQ1:
-        if(data.btnOkTouched)
-        {
-          if(checkQuestionIsOk(1))
-          data.gameStep=gpQ2;
+
+        if(btnOkTouched) {
+          // Stop spinning if the last challenge is reached, otherwise start spinning
+          if (challengeID<CHALLENGE_MAX-1)
+          {
+            radarSpinning=true; // Start the radar
+            updateScreen=true;  // Update the screen
+            screen=scRadar;     // Go to the next state
+          }
+
+          btnOkTouched=false;
         }
-        break;
-      case gpQ2:
-        break;
-    }
+
+        } // screen==scDisplayChallenge
+
+      else if (screen==scRadar)
+      {
+
+        if(btnNextTouched) {
+
+          btnNextTouched=false;
+        }
+
+        if(btnOkTouched) {
+
+          btnOkTouched=false;
+        }
+
+      }
  
-    if(data.btnPlayTouched)
-    {
-      Serial.printf("button play touched: %d!\n",touchRead(PIN_BUT_1));
-      portENTER_CRITICAL(&dataAccessMux);
-        data.btnPlayTouched=false;
-      portEXIT_CRITICAL(&dataAccessMux);
-
-    }
-    if(data.btnOkTouched)
-    {
-      Serial.printf("button ok touched:%d!\n",touchRead(PIN_BUT_2));
-      portENTER_CRITICAL(&dataAccessMux);
-        data.btnOkTouched=false;
-      portEXIT_CRITICAL(&dataAccessMux);
-    }
-
-    // Blocking stepper functions can be used.
     vTaskDelay(100);
   } // while
 }
 
-bool checkQuestionIsOk(int question)
-{
-  bool ok=true;
-  bool objectFoundWithinAnswerPosition=false;
-  bool isWithinAnswerPosition,prevIsWithinAnswerPosition;
-  double dist;
-  for(int pos=STEPPERLEFTPOS ; pos<=STEPPERRIGHTPOS ; pos++)
-  {
-    //check if radarposition is within answerposition
-    isWithinAnswerPosition=(
-      abs(config.answerArr[question].pos1-pos) < (SONAR_POSWINDOW/2) ||
-      abs(config.answerArr[question].pos2-pos) < (SONAR_POSWINDOW/2));
-
-    portENTER_CRITICAL_ISR(&dataAccessMux);
-      dist=data.radarData[pos].cur.distance;
-    portEXIT_CRITICAL_ISR(&dataAccessMux); 
-
-    //check if object is found
-    if(dist<SONAR_NO_SEE_DISTANCE)
-    {
-      //something is found
-      if(isWithinAnswerPosition) 
-      {
-        objectFoundWithinAnswerPosition=true;
-      }else
-      {
-        //object found outside answerzone
-        ok=false;
-      }
-    }
-      
-    //check end of good-answer zone/window
-    if(!isWithinAnswerPosition && prevIsWithinAnswerPosition) 
-    {
-      if(!objectFoundWithinAnswerPosition) 
-      {
-        // no object found in answer zone
-        ok=false;
-      }
-      objectFoundWithinAnswerPosition=false;
-    }
-
-    prevIsWithinAnswerPosition=isWithinAnswerPosition;
-    
-    //stop looping if there is a fail
-    if(!ok)break;
-  }//for loop
-  return ok;
-}
 #endif

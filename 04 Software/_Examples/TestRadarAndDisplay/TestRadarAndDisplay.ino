@@ -11,7 +11,8 @@
 #include "wbf2_data.h"
 #include "wbf3_stepper.h" 
 #include "wbf4_radar.h"
-#include "wbf5_display.h"
+#include "wbf5_gameplay.h"
+#include "wbf6_display.h"
 
 //====================================================================================
 //                                    Setup and Loop
@@ -21,6 +22,9 @@ void setup()
   // Initialize debug channel
   Serial.begin(115200);
   delay(100);
+
+  // Setup gameplay
+  setupGameplay();
 
   // Make the radar spin
   initRadar();
@@ -35,9 +39,20 @@ void loop() {
   if(debugTrigger<millis()) {
     debugTrigger=millis()+500;
     
+    if     (mainState==msFirstChallenge)   Serial.print("First   ");
+    else if(mainState==msConfirmChallenge) Serial.print("Confirm ");
+    else if(mainState==msRadar)            Serial.print("Radar ");
+    else if(mainState==msAnswerCorrect)    Serial.print("Correct ");
+
+    
+    Serial.printf("KB%d ", keyBoardWatchDog);
+    Serial.printf("B1%d ", touchRead(PIN_BUT_1));
+    Serial.printf("B2%d ", touchRead(PIN_BUT_2));
+
     Serial.printf("%d) ", stepper.currentPos());
     Serial.printf("*%d* ", radarDebug);
     for(int i=0; i<RADAR_ARRAY_SIZE; i++) Serial.printf("%3.0f ", radarMeasurements[i]);
     Serial.println("");
+
   }
 }

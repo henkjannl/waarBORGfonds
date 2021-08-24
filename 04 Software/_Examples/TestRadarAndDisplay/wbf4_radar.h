@@ -17,7 +17,7 @@ The radar runs on two interrupt routines:
 
 */
 
-#define ENABLE_STEPPER false     // For debug purposes
+#define ENABLE_STEPPER true      // For debug purposes
 #define DISTANCE_SCALE 0.34/2    // mm per µs
 
 //=====================
@@ -50,23 +50,31 @@ void IRAM_ATTR onStepperInterrupt() {
   portENTER_CRITICAL_ISR(&radarMux);
   
   if(sweepDirectionPos) {
-    if(ENABLE_STEPPER) stepper.stepUp();
-    stepInSample++;
-    if(stepInSample>STEPS_BETWEEN_SAMPLES) {
+    if(ENABLE_STEPPER and radarSpinning) 
+    {
+      stepper.stepUp();
+      stepInSample++;
+      if(stepInSample>STEPS_BETWEEN_SAMPLES) 
+      {
       stepInSample=0;
       sampleID++;
       if(sampleID>RADAR_ARRAY_SIZE-2) sweepDirectionPos=false;
       triggerMeasurement();
+      }
     }
   }
   else {
-    if(ENABLE_STEPPER) stepper.stepDown();
-    stepInSample++;
-    if(stepInSample>STEPS_BETWEEN_SAMPLES) {
-      stepInSample=0;
-      sampleID--;
-      if(sampleID<1) sweepDirectionPos=true;
-      triggerMeasurement();
+    if(ENABLE_STEPPER and radarSpinning) 
+    {
+      stepper.stepDown();
+      stepInSample++;
+      if(stepInSample>STEPS_BETWEEN_SAMPLES) 
+      {
+        stepInSample=0;
+        sampleID--;
+        if(sampleID<1) sweepDirectionPos=true;
+        triggerMeasurement();
+      }
     }
   }
   
@@ -74,7 +82,6 @@ void IRAM_ATTR onStepperInterrupt() {
 }
 
 void IRAM_ATTR onEchoInterrupt() {
-  portENTER_CRITICAL_ISR(&radarMux);
   
   if(digitalRead(PIN_SONIC_ECHO)) {
     // Rising edge, the signal starts to come in
@@ -84,12 +91,14 @@ void IRAM_ATTR onEchoInterrupt() {
   else {
     // Falling edge, the length of the signal determines the distance
     radarDebug=(radarDebug==2) ? 4 : 3;
+    
+    portENTER_CRITICAL_ISR(&radarMux);
     radarMeasurements[sampleID] = DISTANCE_SCALE * (esp_timer_get_time() - echoStartTimer);
+    portEXIT_CRITICAL_ISR(&radarMux);
   }
 
-  portEXIT_CRITICAL_ISR(&radarMux);
+  
 }
-
 
 void initRadar() {
   pinMode(PIN_SONIC_TRIG, OUTPUT); // Sets the trigPin as an Output

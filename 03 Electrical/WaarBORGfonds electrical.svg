@@ -209,11 +209,11 @@
      inkscape:window-width="1920"
      inkscape:snap-center="true"
      showgrid="true"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="g614"
      inkscape:document-units="mm"
-     inkscape:cy="396.85039"
-     inkscape:cx="526.70693"
-     inkscape:zoom="0.98399802"
+     inkscape:cy="398.10652"
+     inkscape:cx="558.55377"
+     inkscape:zoom="1.1106895"
      inkscape:pageshadow="2"
      inkscape:pageopacity="1"
      borderopacity="1.0"
@@ -1119,9 +1119,9 @@
     <path
        inkscape:connector-curvature="0"
        id="path3654"
-       d="m 222.49731,144.00002 h -15"
+       d="M 222.49731,144.00002 219.99998,146.5 h -22.5"
        style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="ccc" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -1203,12 +1203,12 @@
        sodipodi:nodetypes="cc" />
     <path
        style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#dccf00;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;stop-color:#000000;stop-opacity:1"
-       d="m 267.49731,159.00002 h 16.25"
+       d="m 209.99998,144 h 7.5"
        id="path958"
        sodipodi:nodetypes="cc" />
     <path
        style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#9700a0;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;stop-color:#000000;stop-opacity:1"
-       d="m 267.49731,149.00002 h 12.5"
+       d="m 272.49998,149 7.49733,2e-5"
        id="path960"
        sodipodi:nodetypes="cc" />
     <path
@@ -1412,18 +1412,18 @@
        sodipodi:nodetypes="cccccc"
        inkscape:connector-curvature="0"
        id="path3632"
-       d="m 212.49731,142.12827 -10.8525,1e-5 -1.6475,1.87174 1.6475,1.87175 10.8525,-1e-5 z"
+       d="m 197.49998,144.62825 -10.8525,1e-5 -1.6475,1.87174 1.6475,1.87175 10.8525,-1e-5 z"
        style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#ababab;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;stop-color:#000000;stop-opacity:1" />
     <text
        id="text3636"
-       y="144.56703"
-       x="206.6487"
+       y="147.06078"
+       x="191.61386"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.79844px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
        transform="scale(0.99750584,1.0025004)"><tspan
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.79844px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         y="144.56703"
-         x="206.6487"
+         y="147.06078"
+         x="191.61386"
          sodipodi:role="line"
          id="tspan3634">RST</tspan></text>
     <ellipse
@@ -1774,18 +1774,18 @@
        sodipodi:nodetypes="cccccc"
        inkscape:connector-curvature="0"
        id="path962"
-       d="m 289.99738,157.12503 -10.84687,-1e-5 -1.65947,1.875 1.65947,1.87501 h 10.84687 z"
+       d="m 199.99364,142.12501 10.84687,-1e-5 1.65947,1.875 -1.65947,1.87501 h -10.84687 z"
        style="display:inline;vector-effect:none;fill:#fff991;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none" />
     <text
        id="text966"
-       y="159.97086"
-       x="283.64651"
+       y="144.96701"
+       x="206.16887"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.81104px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264582"
        xml:space="preserve"
        transform="scale(1.000255,0.99974506)"><tspan
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.81104px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-anchor:middle;stroke-width:0.264582"
-         y="159.97086"
-         x="283.64651"
+         y="144.96701"
+         x="206.16887"
          sodipodi:role="line"
          id="tspan964">BTN1</tspan></text>
     <rect
@@ -1821,15 +1821,15 @@
        x="283.75684"
        y="149.00002" />
     <ellipse
-       cy="159.00002"
-       cx="267.49731"
+       cy="144"
+       cx="217.49998"
        id="ellipse978"
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#fff991;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;stop-color:#000000;stop-opacity:1"
        rx="1.4424021"
        ry="1.4416666" />
     <ellipse
-       cy="149.00002"
-       cx="267.49731"
+       cy="149"
+       cx="272.49997"
        id="ellipse980"
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#f991ff;fill-opacity:1;stroke:#000000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none;stop-color:#000000;stop-opacity:1"
        rx="1.4424021"
@@ -2409,7 +2409,7 @@
            y="23.756397"
            x="207.69508"
            sodipodi:role="line"
-           id="tspan1032">13</tspan><tspan
+           id="tspan1032">4</tspan><tspan
            style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.81104px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-anchor:middle;stroke-width:0.211864"
            y="26.567438"
            x="207.69508"
@@ -2618,7 +2618,7 @@
            y="23.756397"
            x="198.17253"
            sodipodi:role="line"
-           id="tspan1139">TCK</tspan><tspan
+           id="tspan1139">IO4</tspan><tspan
            style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:2.81104px;line-height:1;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-anchor:middle;stroke-width:0.211864"
            y="26.567438"
            x="198.17253"

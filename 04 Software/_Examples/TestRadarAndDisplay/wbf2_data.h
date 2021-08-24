@@ -9,28 +9,11 @@
 #define MICROSECONDS_BETWEEN_STEPS 1000 // Number of µs between steps
 
 #define CHALLENGE_MAX 3                 // Number of challenges
+#define NUM_BOTTLE_LOCATIONS 7
 
-// ======== CONSTANTS ================
+#define BOTTLE_PRESENT_THRESHOLD 350.0                  // A bottle should be nearer than 350 mm to be detected
 
 // ======== DATA TYPES ============= 
-enum tScreen          {scStartChallenge, scDisplayChallenge, scRadarRed, scRadarGreen };
-
-
-typedef struct {
-  char titleLine1[25];           // First line of title
-  char titleLine2[25];           // Second line of title
-  int CanPos1                    // Position of first can  (-1 is not needed)
-  int CanPos2                    // Position of second can (-1 is not needed)
-  int CanPos3                    // Position of third can  (-1 is not needed)
-} tChallenge;
-
-
-// List the challenges, including the final one
-static const tChallenge challenges[] = {
-  {  "1) Welke programma's", "zijn correct", 600, 1200, 1800 },
-  {  "2) Welke programma's", "zijn correct", 600, 1200,   -1 },
-  {  "JE HEBT",              "GEWONNEN!"   ,  -1,   -1,   -1 }
-};
 
 class tPixel {
   public:
@@ -42,21 +25,36 @@ class tPixel {
     //tPixel(tPixel& p)     { this->x=p->x; this->y=p->y; };
 };
 
+enum tMainState {msFirstChallenge, msConfirmChallenge, msRadar, msAnswerCorrect };
 
+typedef struct {
+  char titleLine1[25];                   // First line of title
+  char titleLine2[25];                   // Second line of title
+  bool hasBottle[NUM_BOTTLE_LOCATIONS];  // At which positions a bottle should be present?
+} tChallenge;
 
+// ======== CONSTANTS ================
+
+static const uint8_t bottleLocations[] = { 20, 25, 30, 35, 40, 45, 50 }; // Indices with predefined locations of bottles
+
+// List the challenges, including the final one
+static const tChallenge challenges[] = {
+  // titleLine1              titleLine2         pos0   pos1   pos2   pos3   pos4   pos5   pos6
+  {  "01", "02", {  true,  false, true,  false, false, false, false } },
+  {  "02", "02", {  false, true,  false, false, true,  false, false } },
+  {  "JE HEBT",              "GEWONNEN!",    {  false, false, false, false, false, false, false } },
+};
 
 
 // ======== GLOBAL VARIABLES ============= 
 
-// ultrasonic distance measurements
-float radarMeasurements[RADAR_ARRAY_SIZE]; // Millimeters from radar
+float radarMeasurements[RADAR_ARRAY_SIZE]; // Ultrasonic distance measurements, millimeters from radar
+tMainState mainState = msFirstChallenge;   // Main state of the program
+int challengeID = 0;                       // Which of the challenges is currently playing
+bool radarSpinning = false;                // Radar spinning or not
+bool updateScreen = true;                  // Screen must be updated
 
-tScreen screen = scStartChallenge; // State machine for different screens
-int challengeID = 0;               // Which of the challenges is currently playing
-bool radarSpinning = false;
-
-portMUX_TYPE dataAccessMux = portMUX_INITIALIZER_UNLOCKED;
-portMUX_TYPE configAccessMux = portMUX_INITIALIZER_UNLOCKED;
+unsigned long keyBoardWatchDog = 0;
 portMUX_TYPE radarMux = portMUX_INITIALIZER_UNLOCKED;
 
 #endif
