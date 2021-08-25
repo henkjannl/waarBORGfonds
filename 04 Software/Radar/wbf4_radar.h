@@ -35,6 +35,7 @@ hw_timer_t * timer = NULL;
 //=====================
 // HELPER FUNCTIONS
 //=====================
+
 void IRAM_ATTR triggerMeasurement() {
 
   // Sets the trigPin on HIGH state for 10 micro seconds
@@ -48,7 +49,9 @@ void IRAM_ATTR triggerMeasurement() {
 
 void IRAM_ATTR onStepperInterrupt() {
   portENTER_CRITICAL_ISR(&radarMux);
-  
+
+  if(2*stepper.currentPos()==RADAR_ARRAY_SIZE*STEPS_BETWEEN_SAMPLES) radarSweepFinished=true;
+
   if(sweepDirectionPos) {
     if(ENABLE_STEPPER and radarSpinning) 
     {
@@ -56,10 +59,10 @@ void IRAM_ATTR onStepperInterrupt() {
       stepInSample++;
       if(stepInSample>STEPS_BETWEEN_SAMPLES) 
       {
-      stepInSample=0;
-      sampleID++;
-      if(sampleID>RADAR_ARRAY_SIZE-2) sweepDirectionPos=false;
-      triggerMeasurement();
+        triggerMeasurement();
+        stepInSample=0;
+        sampleID++;
+        if(sampleID>RADAR_ARRAY_SIZE-2) sweepDirectionPos=false;
       }
     }
   }
@@ -70,10 +73,10 @@ void IRAM_ATTR onStepperInterrupt() {
       stepInSample++;
       if(stepInSample>STEPS_BETWEEN_SAMPLES) 
       {
+        triggerMeasurement();
         stepInSample=0;
         sampleID--;
         if(sampleID<1) sweepDirectionPos=true;
-        triggerMeasurement();
       }
     }
   }
@@ -92,7 +95,7 @@ void IRAM_ATTR onEchoInterrupt() {
   else {
     // Falling edge, the length of the signal determines the distance
     portENTER_CRITICAL_ISR(&radarMux);
-    if(radarDebug==2)
+    //if(radarDebug==2)
       radarMeasurements[sampleID] = DISTANCE_SCALE * (esp_timer_get_time() - echoStartTimer);
     portEXIT_CRITICAL_ISR(&radarMux);
 

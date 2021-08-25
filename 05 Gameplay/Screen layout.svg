@@ -23,21 +23,28 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.2411052"
-     inkscape:cx="-438.43481"
-     inkscape:cy="120"
+     inkscape:zoom="1.4608761"
+     inkscape:cx="247.99185"
+     inkscape:cy="119.9918"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
-     showgrid="true"
-     units="px">
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-center="true">
     <inkscape:grid
        type="xygrid"
        id="grid10"
        units="px"
        spacingx="2.1166667"
        spacingy="2.1166667"
-       empspacing="8" />
+       empspacing="8"
+       originx="135.46666"
+       originy="0" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -47,14 +54,15 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(135.46667)">
     <rect
        style="fill:#000000;stroke:#ffffff;stroke-width:0.255902;stroke-linejoin:round;stop-color:#000000"
        id="rect14"
@@ -104,7 +112,7 @@
        x="-67.73333"
        y="0" />
     <circle
-       style="fill:#008000;stroke:none;stroke-width:0.255902;stroke-linejoin:round;stop-color:#000000;fill-opacity:1"
+       style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.255902;stroke-linejoin:round;stop-color:#000000"
        id="circle912"
        cx="-35.983334"
        cy="31.75"
@@ -138,50 +146,96 @@
          y="59.505165"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#ffffff;stroke-width:0.264583">250°</tspan></text>
     <rect
-       style="fill:#000000;stroke:#ffffff;stroke-width:0.255902;stroke-linejoin:round;stop-color:#000000"
+       style="fill:#000000;stroke:none;stroke-width:0.255902;stroke-linejoin:round;stop-color:#000000"
        id="rect20"
        width="63.5"
        height="63.5"
        x="-135.46667"
        y="0" />
     <rect
-       style="fill:#808080;stroke-width:4.99999;stop-color:#000000"
+       style="fill:#808080;stroke-width:5;stop-color:#000000"
        id="rect32"
-       width="59.266666"
-       height="8.4666672"
-       x="-133.35001"
-       y="8.4666662"
-       rx="2.1166663"
-       ry="2.1166663" />
-    <rect
-       style="fill:#808080;stroke-width:4.99999;stop-color:#000000"
-       id="rect34"
-       width="2.1166728"
-       height="19.050001"
-       x="-135.46667"
-       y="0"
-       rx="1.0583364"
-       ry="2.1166668" />
-    <circle
-       style="fill:#a00000;stroke-width:4.99999;stop-color:#000000"
-       id="path36"
-       cx="-103.71667"
-       cy="12.7"
-       r="2.1166668" />
-    <rect
-       style="fill:#808080;stroke-width:4.99999;stop-color:#000000"
-       id="rect38"
-       width="59.266666"
-       height="8.4666672"
-       x="-133.34999"
-       y="19.050001"
+       width="15.875"
+       height="6.8791666"
+       x="-134.40834"
+       y="1.0583334"
        rx="2.1166663"
        ry="2.1166663" />
     <circle
-       style="fill:#a00000;stroke-width:4.99999;stop-color:#000000"
+       style="fill:#a00000;stroke-width:4.99998;stop-color:#000000"
        id="circle40"
-       cx="-103.71666"
-       cy="23.283335"
+       cx="-103.7167"
+       cy="34.395855"
+       r="17.19792" />
+    <rect
+       style="fill:#000000;stroke:#ffffff;stroke-width:0.255902;stroke-linejoin:round;stop-color:#000000"
+       id="rect26"
+       width="63.5"
+       height="63.5"
+       x="-203.2"
+       y="0" />
+    <rect
+       style="fill:#808080;stroke-width:5;stop-color:#000000"
+       id="rect35"
+       width="59.266666"
+       height="21.166666"
+       x="-201.21129"
+       y="8.3387156"
+       rx="2.1166663"
+       ry="2.1166663" />
+    <circle
+       style="fill:#a00000;stroke-width:4.99999;stop-color:#000000"
+       id="circle37"
+       cx="-171.57796"
+       cy="18.922049"
        r="2.1166668" />
+    <rect
+       style="fill:#fff119;stroke-width:0.2;stop-color:#000000"
+       id="rect39"
+       width="38.099998"
+       height="6.8791666"
+       x="-188.38335"
+       y="51.858337" />
+    <rect
+       style="fill:#fff119;stroke-width:0.2;stop-color:#000000"
+       id="rect41"
+       width="38.099998"
+       height="6.8791666"
+       x="-188.38335"
+       y="42.333336" />
+    <rect
+       style="fill:#fff119;stroke-width:0.2;stop-color:#000000"
+       id="rect43"
+       width="38.099998"
+       height="6.8791666"
+       x="-188.38335"
+       y="33.337502" />
+    <rect
+       style="fill:none;stroke:#a00000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       id="rect30"
+       width="33.86665"
+       height="55.29792"
+       x="-203.2"
+       y="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M -169.33335,36.777084 V 55.29792"
+       id="path868" />
+    <rect
+       style="fill:#808080;stroke-width:5;stop-color:#000000"
+       id="rect870"
+       width="15.875"
+       height="6.8791666"
+       x="-88.900009"
+       y="1.0583334"
+       rx="2.1166663"
+       ry="2.1166663" />
+    <rect
+       style="fill:none;stroke:#a00000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       id="rect872"
+       width="31.749977"
+       height="34.395855"
+       x="-135.46667"
+       y="0" />
   </g>
 </svg>

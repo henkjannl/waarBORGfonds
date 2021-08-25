@@ -24,7 +24,7 @@
 
 #define SCREEN_CENTER_X 120
 #define SCREEN_CENTER_Y 120
-#define RADIUS_SCALE    120.0/450                       // 450 mm distance maps on 120 pixels
+#define RADIUS_SCALE    120.0/750                       // 450 mm distance maps on 120 pixels
 #define RADIUS_MAX      116                             // Distances clip after this value
 #define ANGLE_OFFSET    0.610865238                     // First measurement maps on this angle
 #define ANGLE_GAIN      -4.36332313/RADAR_ARRAY_SIZE    // All measurements span this angle
@@ -70,11 +70,6 @@ void taskDisplay(void * parameter )
   
   float radius;          
   float angle;
-
-
-  uint8_t counter;
-  bool C[5];
-
    
   while(true) {
 
@@ -176,60 +171,7 @@ void taskDisplay(void * parameter )
             currPoint.y=SCREEN_CENTER_Y-radius*sin(angle);
             tft.drawLine(SCREEN_CENTER_X, SCREEN_CENTER_Y, currPoint.x, currPoint.y, CLR_RADAR_WIPER);
    
-            // Check if the answer is correct
-
-            // Calculate the C coefficients
-            counter=0; 
-            for(int i=21; i<29; i++) if(bottleDistance[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
-            C[0]=(counter>4);
-
-            counter=0; 
-            for(int i=25; i<33; i++) if(bottleDistance[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
-            C[1]=(counter>4);
-
-            counter=0; 
-            for(int i=29; i<37; i++) if(bottleDistance[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
-            C[2]=(counter>4);
-
-            counter=0; 
-            for(int i=33; i<41; i++) if(bottleDistance[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
-            C[3]=(counter>4);
-            
-            counter=0; 
-            for(int i=37; i<45; i++) if(bottleDistance[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
-            C[4]=(counter>4);
-
-            // Calculate possible answers
-            if       (!C[0] && !C[1] &&  C[3] &&  C[4]) answer=anA;
-            else if  ( C[0] && !C[2] && !C[4])          answer=anC;
-            else if  ( C[0] &&  C[2] &&  C[4])          answer=anAandC;
-            else if  ( C[1] &&  C[2] &&  C[3])          answer=anB;
-            else                                        answer=anNoBottles;
-
-            char buffer[10];
-            buffer[0]='C';
-            buffer[1]=C[0] ? 'X' : '.';
-            buffer[2]=C[1] ? 'X' : '.';
-            buffer[3]=C[2] ? 'X' : '.';
-            buffer[4]=C[3] ? 'X' : '.';
-            buffer[5]=C[4] ? 'X' : '.';
-            buffer[6]=' ';
-            buffer[7]='\0';
-            debug=String(buffer);
-
-  
-            if(answer==challenges[challengeID].answer) 
-            {
-              // All the bottles were in the right places
-              if(challengeID==NUM_CHALLENGES-1)
-                mainState=msCompleted;
-              else
-                mainState=msAnswerCorrect;
-  
-              updateScreen=true;
-            }  
-            else
-              vTaskDelay(1000); // Refresh radar image once per second
+            vTaskDelay(1000); // Refresh radar image after some delay
 
         break; // case msRadar 
 
@@ -243,10 +185,15 @@ void taskDisplay(void * parameter )
       
               tft.setTextColor(CLR_TEXT);
               tft.setTextDatum(MC_DATUM);
-              tft.drawString("CONGRATULATIONS!", SCREEN_CENTER_X, SCREEN_CENTER_Y, 4);
+              tft.drawString("ANSWER",  SCREEN_CENTER_X, SCREEN_CENTER_Y-16, 4);
+              tft.drawString("CORRECT", SCREEN_CENTER_X, SCREEN_CENTER_Y+16, 4);
       
               updateScreen=false;
               vTaskDelay(3000); // Delay next refresh of the screen for 3 seconds
+
+              // Go to the next screen
+              mainState=msConfirmChallenge;
+              updateScreen=true;
             }
           break; // case msAnswerCorrect
 

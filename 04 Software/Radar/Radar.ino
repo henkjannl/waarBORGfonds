@@ -58,11 +58,10 @@ void loop() {
     if(radarSpinning)
     {
       Serial.printf("[%s] ",debug);
-      if(answer==anNoBottles)   Serial.print("No bottles " );
-      else if (answer==anA    ) Serial.print("Bottle A "   );
-      else if (answer==anB    ) Serial.print("Bottle B "   );
-      else if (answer==anC    ) Serial.print("Bottle C "   );
-      else if (answer==anAandC) Serial.print("Bottle A+C " );
+      if(bottleLocations==anNoBottles)   Serial.print("No bottles " );
+      else if (bottleLocations==anA    ) Serial.print("Bottle A "   );
+      else if (bottleLocations==anB    ) Serial.print("Bottle B "   );
+      else if (bottleLocations==anC    ) Serial.print("Bottle C "   );
       
       for(int i=0; i<RADAR_ARRAY_SIZE; i++) Serial.printf("%d ", int(radarMeasurements[i]));
     }

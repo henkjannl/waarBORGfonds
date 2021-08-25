@@ -37,6 +37,44 @@ static void keyboardTimerCallback( TimerHandle_t xTimer ) {
 
 }; // keyboardTimerCallback
 
+void determineBottleLocations() {
+
+    uint8_t counter;
+    bool C[5];
+
+    // Calculate the C coefficients
+    // these coefficients determine in which regions a response was measured
+    portENTER_CRITICAL_ISR(&radarMux);
+
+    counter=0; 
+    for(int i=21; i<29; i++) if(radarMeasurements[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
+    C[0]=(counter>4);
+
+    counter=0; 
+    for(int i=25; i<33; i++) if(radarMeasurements[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
+    C[1]=(counter>4);
+
+    counter=0; 
+    for(int i=29; i<37; i++) if(radarMeasurements[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
+    C[2]=(counter>4);
+
+    counter=0; 
+    for(int i=33; i<41; i++) if(radarMeasurements[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
+    C[3]=(counter>4);
+    
+    counter=0; 
+    for(int i=37; i<45; i++) if(radarMeasurements[i]<BOTTLE_PRESENT_THRESHOLD) counter++;
+    C[4]=(counter>4);
+
+    portEXIT_CRITICAL_ISR(&radarMux);
+
+    // Based on the coefficients, the bottle locations can be determined
+    if       (!C[0] && !C[1] &&  C[4] ) bottleLocations=anA;
+    else if  ( C[0] && !C[3] && !C[4] ) bottleLocations=anC;
+    else if  ( C[1] &&   C[2] && C[3] ) bottleLocations=anB;
+    else                                bottleLocations=anNoBottles;
+}
+
 
 void setupGameplay() 
 {
@@ -69,6 +107,7 @@ void taskGameplay(void *parameter)
   updateScreen=true;
   mainState=msWelcomeScreen;
   radarSpinning=false;
+  uint16_t sustainedGoodAnswer = 0;
   
   while(true) 
   {
@@ -81,11 +120,11 @@ void taskGameplay(void *parameter)
           // press any key to go to the next screen
           
           if(btnNextTouched || btnOkTouched) {
-            mainState=msConfirmChallenge;
             updateScreen=true;
             challengeID=0;
             btnNextTouched=false;
             btnOkTouched=false;
+            mainState=msConfirmChallenge;
           }
   
         break; // case msWelcomeScreen
@@ -104,12 +143,7 @@ void taskGameplay(void *parameter)
           }
   
           if(btnOkTouched) {
-
-            // Reset the radar screen to prevent the next answer to be correct straight away
-            portENTER_CRITICAL_ISR(&radarMux);
-            for(int i=0; i<RADAR_ARRAY_SIZE; i++) radarMeasurements[sampleID] = 3000.0;
-            portEXIT_CRITICAL_ISR(&radarMux);
-            
+            sustainedGoodAnswer=0;
             radarSpinning=true; // Start the radar
             updateScreen=true;  // Update the screen
             mainState=msRadar;     // Go to the next state
@@ -130,15 +164,40 @@ void taskGameplay(void *parameter)
             btnNextTouched=false;
           }
   
-          // Checking if the answer is correct is done in the display module
+          // At each sweep of the radar, check if the bottles are in the right location
+          if(radarSweepFinished) 
+          {
+            radarSweepFinished=false;
+            determineBottleLocations();
+
+            if(bottleLocations==challenges[challengeID].answer) 
+              sustainedGoodAnswer++;
+            else
+              sustainedGoodAnswer=0;
+
+            // The bottles need to be in the right location for at least two sweeps
+            // to prevent moving forward while still moving bottles
+            if(sustainedGoodAnswer>2)
+              {
+                // All the bottles were in the right places
+                // go to the next challenge
+                radarSpinning=false; // Stop the radar
+                challengeID++;
+                
+                if(challengeID==NUM_CHALLENGES)
+                  mainState=msCompleted;
+                else
+                  mainState=msAnswerCorrect;
+    
+                updateScreen=true;
+              }  
+          }
           
           break; // case msRadar
   
   
         case msAnswerCorrect:
 
-          if(challengeID<NUM_CHALLENGES-1) challengeID++;
-          updateScreen=true;
           radarSpinning=false; // Stop the radar
   
           // Ignore buttons during this state
@@ -151,6 +210,17 @@ void taskGameplay(void *parameter)
 
         case msCompleted:
           // nothing left to do
+
+          // But allow the fols to start again
+          if(btnNextTouched || btnOkTouched) {
+            updateScreen=true;
+            challengeID=0;
+            btnNextTouched=false;
+            btnOkTouched=false;
+            mainState=msConfirmChallenge;
+          }
+
+          
         break; //msCompleted
           
         } // switch(mainState)
