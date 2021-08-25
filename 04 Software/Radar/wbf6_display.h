@@ -13,14 +13,16 @@
 //
 // ======== DEFINES ======================
 //
-#define CLR_BACKGROUND   0x0000   // 00, 00, 00 = black
-#define CLR_DARK         0x2945   // 28, 28, 28 = dark grey
-#define CLR_TEXT         0xFFFF   // FF, FF, FF = white
-#define CLR_RADAR_WIPER  0xF800   // FF, 00, 00 = red
-#define CLR_LABELS       0xF800   // FF, 00, 00 = red
-#define CLR_RED_RADAR    0xA000   // A0, 00, 00 = dark red
-#define CLR_GREEN_RADAR  0x0400   // 00, 80, 00 = green
-#define CLR_SMALL_TEXT   0x8410   // 80, 80, 80 = light grey
+#define CLR_BACKGROUND     0x0000   // 00, 00, 00 = black
+#define CLR_DARK           0x2945   // 28, 28, 28 = dark grey
+#define CLR_TEXT           0xFFFF   // FF, FF, FF = white
+#define CLR_RADAR_WIPER    0xF800   // FF, 00, 00 = red
+#define CLR_LABELS         0xF800   // FF, 00, 00 = red
+#define CLR_RED_RADAR      0xA000   // A0, 00, 00 = dark red
+#define CLR_SMALL_TEXT     0x8410   // 80, 80, 80 = light grey
+#define CLR_RADAR_RAYS     0x0408   // 00, 80, 40 = dark green
+#define CLR_RADAR_CONTOUR  0x0710   // 00, E0, 80 = light green
+#define CLR_GREEN_OK       0x0408   // 00, 80, 40 = dark green
 
 #define SCREEN_CENTER_X 120
 #define SCREEN_CENTER_Y 120
@@ -154,14 +156,10 @@ void taskDisplay(void * parameter )
               currPoint.x=SCREEN_CENTER_X+radius*cos(angle);
               currPoint.y=SCREEN_CENTER_Y-radius*sin(angle);
   
-              tft.drawLine(SCREEN_CENTER_X, SCREEN_CENTER_Y, currPoint.x, currPoint.y, CLR_SMALL_TEXT);
-              tft.drawLine(prevPoint.x,     prevPoint.y,     currPoint.x, currPoint.y, CLR_TEXT);
+              tft.drawLine(SCREEN_CENTER_X, SCREEN_CENTER_Y, currPoint.x, currPoint.y, CLR_RADAR_RAYS   );
+              tft.drawLine(prevPoint.x,     prevPoint.y,     currPoint.x, currPoint.y, CLR_RADAR_CONTOUR);
   
             } // for i
-
-            // Draw threshold circle
-            radius = RADIUS_SCALE*BOTTLE_PRESENT_THRESHOLD;
-            tft.drawCircle(SCREEN_CENTER_X, SCREEN_CENTER_Y, radius, CLR_RED_RADAR);
   
             // Draw radar wiper
             radius = 120;
@@ -181,7 +179,7 @@ void taskDisplay(void * parameter )
             {
               // Clear screen
               tft.fillScreen(CLR_BACKGROUND);    
-              tft.fillCircle(SCREEN_CENTER_X, SCREEN_CENTER_Y, 120, CLR_GREEN_RADAR);
+              tft.fillCircle(SCREEN_CENTER_X, SCREEN_CENTER_Y, 120, CLR_GREEN_OK);
       
               tft.setTextColor(CLR_TEXT);
               tft.setTextDatum(MC_DATUM);
@@ -203,7 +201,7 @@ void taskDisplay(void * parameter )
           {
             // Clear screen
             tft.fillScreen(CLR_BACKGROUND);    
-            tft.fillCircle(SCREEN_CENTER_X, SCREEN_CENTER_Y, 120, CLR_GREEN_RADAR);
+            tft.fillCircle(SCREEN_CENTER_X, SCREEN_CENTER_Y, 120, CLR_GREEN_OK);
     
             tft.setTextColor(CLR_TEXT);
             tft.setTextDatum(MC_DATUM);

@@ -8,7 +8,7 @@
 #define STEPS_BETWEEN_SAMPLES        45 // Number of steps between ultrasonic measurements 
 #define MICROSECONDS_BETWEEN_STEPS 1000 // Number of µs between steps
 
-#define NUM_CHALLENGES       3          // Number of challenges
+#define NUM_CHALLENGES                7 // Number of challenges
 
 #define BOTTLE_PRESENT_THRESHOLD 365.0  // A bottle should be nearer than this distance to be detected
 
@@ -37,9 +37,13 @@ typedef struct {
 
 // List the challenges, including the final one
 static const tChallenge challenges[] = {
-  { "1", anA }, 
-  { "2", anB }, 
-  { "3", anC }  
+  { "1", anB }, // Formule van PEEK 
+  { "2", anC }, // Kosten van het part
+  { "3", anA }, // Gezondste manier om op je werk te komen
+  { "4", anA }, // Fietsroute
+  { "5", anB }, // Hardware rules
+  { "6", anC }, // Altijd hard werken 
+  { "7", anC }  // Softwarebugs
 };
 
 
