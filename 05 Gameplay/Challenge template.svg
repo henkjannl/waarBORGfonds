@@ -23,11 +23,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.69575617"
-     inkscape:cx="793.70079"
-     inkscape:cy="561.25981"
+     inkscape:zoom="0.29192525"
+     inkscape:cx="855.33598"
+     inkscape:cy="706.07331"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="g85"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:snap-center="true"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -175,7 +175,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Holes"
-     style="display:inline">
+     style="display:none">
     <circle
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="path181"
@@ -251,5 +251,107 @@
        cx="311.5"
        cy="12.5"
        r="2.5" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g85"
+     inkscape:label="Holes copy"
+     style="display:inline">
+    <g
+       id="g966"
+       transform="translate(181.74397,8.261435)">
+      <circle
+         style="fill:none;stroke:#ff1919;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="path113"
+         cx="-146.02817"
+         cy="125.11268"
+         r="20.915493" />
+      <circle
+         style="fill:none;stroke:#ff1919;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="circle938"
+         cx="-146.02817"
+         cy="125.11268"
+         r="13.855834" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M -146.02817,100.59998 V 121.9137"
+         id="path940" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -146.02817,128.31165 v 21.31373"
+         id="path946" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -121.51547,125.11268 h -21.31372"
+         id="path948" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -149.22714,125.11268 h -21.31373"
+         id="path950" />
+    </g>
+    <g
+       id="g980"
+       transform="translate(356.02817,59.88732)">
+      <circle
+         style="fill:none;stroke:#ff1919;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="circle968"
+         cx="-146.02817"
+         cy="125.11268"
+         r="20.915493" />
+      <circle
+         style="fill:none;stroke:#ff1919;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="circle970"
+         cx="-146.02817"
+         cy="125.11268"
+         r="13.855834" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M -146.02817,100.59998 V 121.9137"
+         id="path972" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -146.02817,128.31165 v 21.31373"
+         id="path974" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -121.51547,125.11268 h -21.31372"
+         id="path976" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -149.22714,125.11268 h -21.31373"
+         id="path978" />
+    </g>
+    <g
+       id="g994"
+       transform="translate(530.36676,8.445105)">
+      <circle
+         style="fill:none;stroke:#ff1919;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="circle982"
+         cx="-146.02817"
+         cy="125.11268"
+         r="20.915493" />
+      <circle
+         style="fill:none;stroke:#ff1919;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+         id="circle984"
+         cx="-146.02817"
+         cy="125.11268"
+         r="13.855834" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M -146.02817,100.59998 V 121.9137"
+         id="path986" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -146.02817,128.31165 v 21.31373"
+         id="path988" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -121.51547,125.11268 h -21.31372"
+         id="path990" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.50001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -149.22714,125.11268 h -21.31373"
+         id="path992" />
+    </g>
   </g>
 </svg>
