@@ -1,0 +1,12 @@
+Font 0 textWidth('X') 6 fontHeight 0
+Font 1 textWidth('X') 6 fontHeight 8
+Font 2 textWidth('X') 8 fontHeight 16
+Font 3 textWidth('X') 14 fontHeight 0
+Font 4 textWidth('X') 15 fontHeight 26
+Font 5 textWidth('X') 14 fontHeight 0
+Font 6 textWidth('X') 12 fontHeight 48
+Font 7 textWidth('X') 12 fontHeight 48
+Font 8 textWidth('X') 29 fontHeight 75
+Font 9 textWidth('X') 6 fontHeight 107
+Font 10 textWidth('X') 6 fontHeight 107
+Font 11 textWidth('X') 6 fontHeight 107
